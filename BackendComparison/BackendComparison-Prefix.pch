@@ -15,8 +15,10 @@
     #import <Foundation/Foundation.h>
 #endif
 
+#define alert(msg)          [[[UIAlertView alloc] initWithTitle:@"Error" message:msg delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil] show]
 
 #define kParseAppId         @""
 #define kParseClientKey     @""
 #define kFirebaseURL        @""
 #define kFirebaseSecret     @""
+#define kStackMobPublicKey  @""

@@ -25,6 +25,7 @@
 		D8F9F857184CD73100141EB6 /* ParseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8F9F856184CD73100141EB6 /* ParseViewController.m */; };
 		D8F9F85B184CDEFD00141EB6 /* ParseCar.m in Sources */ = {isa = PBXBuildFile; fileRef = D8F9F85A184CDEFD00141EB6 /* ParseCar.m */; };
 		D8F9F85F184CE1AC00141EB6 /* FirebaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8F9F85E184CE1AC00141EB6 /* FirebaseViewController.m */; };
+		D8F9F863184CEF8A00141EB6 /* StackMobViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8F9F862184CEF8A00141EB6 /* StackMobViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,8 @@
 		D8F9F85A184CDEFD00141EB6 /* ParseCar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParseCar.m; sourceTree = "<group>"; };
 		D8F9F85D184CE1AC00141EB6 /* FirebaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirebaseViewController.h; sourceTree = "<group>"; };
 		D8F9F85E184CE1AC00141EB6 /* FirebaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirebaseViewController.m; sourceTree = "<group>"; };
+		D8F9F861184CEF8A00141EB6 /* StackMobViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StackMobViewController.h; sourceTree = "<group>"; };
+		D8F9F862184CEF8A00141EB6 /* StackMobViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StackMobViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +135,7 @@
 				D8F9F82F184CD4F400141EB6 /* Main.storyboard */,
 				D8F9F852184CD5E400141EB6 /* SimpleArrayViewController.h */,
 				D8F9F853184CD5E400141EB6 /* SimpleArrayViewController.m */,
+				D8F9F860184CEF5E00141EB6 /* StackMob */,
 				D8F9F85C184CE17000141EB6 /* Firebase */,
 				D8F9F858184CDEE200141EB6 /* Parse */,
 				D8F9F835184CD4F400141EB6 /* Images.xcassets */,
@@ -187,6 +191,15 @@
 				D8F9F85E184CE1AC00141EB6 /* FirebaseViewController.m */,
 			);
 			name = Firebase;
+			sourceTree = "<group>";
+		};
+		D8F9F860184CEF5E00141EB6 /* StackMob */ = {
+			isa = PBXGroup;
+			children = (
+				D8F9F861184CEF8A00141EB6 /* StackMobViewController.h */,
+				D8F9F862184CEF8A00141EB6 /* StackMobViewController.m */,
+			);
+			name = StackMob;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -322,6 +335,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D8F9F854184CD5E400141EB6 /* SimpleArrayViewController.m in Sources */,
+				D8F9F863184CEF8A00141EB6 /* StackMobViewController.m in Sources */,
 				D8F9F82E184CD4F400141EB6 /* AppDelegate.m in Sources */,
 				D8F9F857184CD73100141EB6 /* ParseViewController.m in Sources */,
 				D8F9F85F184CE1AC00141EB6 /* FirebaseViewController.m in Sources */,

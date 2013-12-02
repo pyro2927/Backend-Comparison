@@ -41,7 +41,7 @@
     newCar.name = newString;
     [newCar saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
         if (error) {
-            [[[UIAlertView alloc] initWithTitle:@"Error" message:error.localizedDescription delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil] show];
+            alert(error.localizedDescription);
         } else {
             [self loadCars];
         }

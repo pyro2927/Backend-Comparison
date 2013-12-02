@@ -55,6 +55,26 @@
                                             <segue destination="6QQ-ch-Hgc" kind="push" id="VkK-yW-hSe"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="rXm-cn-wbQ" style="IBUITableViewCellStyleDefault" id="BoD-DN-zBR">
+                                        <rect key="frame" x="0.0" y="152" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="BoD-DN-zBR" id="DJG-1N-YnT">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="StackMob" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="rXm-cn-wbQ">
+                                                    <rect key="frame" x="15" y="0.0" width="270" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="wgk-xe-Xj8" kind="push" id="9yo-nS-Ywu"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -65,7 +85,36 @@
             </objects>
             <point key="canvasLocation" x="878" y="380"/>
         </scene>
-        <!--Firebase View Controller-->
+        <!--Stack Mob View Controller - StackMob-->
+        <scene sceneID="6gn-ir-1XG">
+            <objects>
+                <tableViewController id="wgk-xe-Xj8" customClass="StackMobViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="NI1-50-dEI">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="pze-lV-wZb">
+                                <rect key="frame" x="0.0" y="86" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pze-lV-wZb" id="dEv-he-yUH">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="wgk-xe-Xj8" id="bdB-wB-xLR"/>
+                            <outlet property="delegate" destination="wgk-xe-Xj8" id="ECX-jH-J4K"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="StackMob" id="tuc-H8-xog"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LrB-ja-xwU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1041" y="1212"/>
+        </scene>
+        <!--Firebase View Controller - Firebase-->
         <scene sceneID="2Fx-0z-w7t">
             <objects>
                 <tableViewController id="6QQ-ch-Hgc" customClass="FirebaseViewController" sceneMemberID="viewController">
@@ -88,13 +137,13 @@
                             <outlet property="delegate" destination="6QQ-ch-Hgc" id="fCb-NH-4vM"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="vGK-Wz-V3y"/>
+                    <navigationItem key="navigationItem" title="Firebase" id="vGK-Wz-V3y"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XGn-EX-lqz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1400" y="865"/>
         </scene>
-        <!--Parse View Controller-->
+        <!--Parse View Controller - Parse-->
         <scene sceneID="8Cz-XT-PNy">
             <objects>
                 <tableViewController id="OWO-Cf-HLC" customClass="ParseViewController" sceneMemberID="viewController">
@@ -117,7 +166,7 @@
                             <outlet property="delegate" destination="OWO-Cf-HLC" id="JqC-Da-a17"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="8gB-PA-D4Y"/>
+                    <navigationItem key="navigationItem" title="Parse" id="8gB-PA-D4Y"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XaM-7A-msp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
