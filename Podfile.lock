@@ -1,0 +1,22 @@
+PODS:
+  - AFNetworking (1.1.0)
+  - Facebook-iOS-SDK (3.10.0)
+  - Firebase (1.0.9)
+  - Parse (1.2.16):
+    - Facebook-iOS-SDK (~> 3.9)
+  - StackMob (2.2.0):
+    - AFNetworking (= 1.1.0)
+
+DEPENDENCIES:
+  - Firebase (~> 1.0.9)
+  - Parse (~> 1.2.16)
+  - StackMob
+
+SPEC CHECKSUMS:
+  AFNetworking: 761a418233d280c1e0580bcb76ff9cb4c3073d17
+  Facebook-iOS-SDK: ef402579aeb30cf0c4a6370fb0a927e3dc3059e5
+  Firebase: f88860bb05fde375a236bab7182ecc4e02fe5c93
+  Parse: 18f62939dd2d13a66270f4cb9a98401d88e3ad54
+  StackMob: d824b7837fe14776cac7c0602cfa7bb1fe20984a
+
+COCOAPODS: 0.27.1
